@@ -1,0 +1,38 @@
+
+body, textarea{
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #0A3871;
+    background-color: #E9ECF8;
+}      
+
+.logo{
+width: 120px;
+height: 48px;
+padding: 40px;
+}
+
+textarea{
+    font-size: 32px;
+    position: absolute;
+    top: 168px;
+    left: 240px; 
+    border: none;
+}
+
+.rectangulo{
+    position:absolute;
+    top: 40px;
+    left: 1250px;
+    width: 420px;
+    height: 770px;
+}
+
+.muñeco{
+    width: 336px;
+    height: 304px;
+    position: absolute;
+    top: 200px;
+    left: 1300px;
+}
