@@ -19,20 +19,36 @@
         </header>
 
         <main>
+
             <form>
-                <textarea name="textarea" rows="10" cols="50">Ingrese el texto aquí</textarea>
+                <textarea id="textoIzquierda" name="textarea" rows="10" cols="50">Ingrese el texto aquí</textarea>
             </form>
-           
+
             <img class="rectangulo" src="imagenes/Rectangle 1.png">
             <img class="muñeco" src="imagenes/Muñeco.png">
+
+            <div id="flexbox">
+                <div><button class="encriptar" onclick= "encriptarTexto();">Encriptar</button></div>
+                <div><button class="desencriptar" onclick="desencriptarTexto();">Desencriptar</button></div>
+            </div>
+
+            <div>
+                <div><textarea id="textoArriba">Ningún mensaje fue encontrado</textarea></div>
+                <div> <textarea id="textoAbajo">Ingresa el texto que desees encriptar o desencriptar</textarea></div>
+            </div>
+
+            <div>
+                <button onclick="copiarTexto();" class="copiar">Copiar</button>
+            </div>
                 
-                
-
-
-
         </main>
-        <script src="app.js"></script>      
 
+        <div>
+            <footer>
+                <p class="nombre">Desarrollado por Kata Nicol</p>
+            </footer>
+        </div>
 
+        <script src="app.js"></script>  
     </body>
 </html>
