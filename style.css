@@ -1,5 +1,4 @@
-
-body, textarea{
+body, textarea, .encriptar, .desencriptar, .copiar{
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
@@ -13,26 +12,114 @@ height: 48px;
 padding: 40px;
 }
 
-textarea{
+#textoIzquierda{
     font-size: 32px;
     position: absolute;
     top: 168px;
     left: 240px; 
     border: none;
+    resize: none;
+}
+
+#flexbox {
+    display: flex;
+    width: Fixed (680px)px;
+    height: Hug (67px)px;
+    position: absolute;
+    top: 870px;
+    left: 240px;
+    gap: 24px;
+}
+  
+.encriptar{
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    background-color:#0A3871;
+    width: 328px;
+    height: 67px;
+    font-size: 20px; color:#E9ECF8
+    
+
+}
+
+.desencriptar{
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    background-color:lightblue;
+    width: 328px;
+    height: 67px; 
+    font-size: 20px;
+}
+
+.copiar{
+    position:absolute;
+    top: 870px;
+    left: 1080px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    background-color:lightblue;
+    width: 250px;
+    height: 50px; 
+    font-size: 20px;
 }
 
 .rectangulo{
     position:absolute;
     top: 40px;
-    left: 1250px;
-    width: 420px;
-    height: 770px;
-}
+    left: 1000px;
+    width:400px;
+    height:944px;
+    }
 
 .muñeco{
+    position: absolute;
     width: 336px;
     height: 304px;
-    position: absolute;
-    top: 200px;
-    left: 1300px;
+    top: 283px;
+    left: 1032px;
 }
+
+#textoArriba{
+    position:absolute;
+    top: 610px;
+    left: 1032px;
+    width:336px;
+    height:122px;
+    border:none;
+    resize: none;
+    font-size:28px; font-weight:bold;
+    text-align: center;
+    background-color: #FFFFFF;
+
+}
+
+#textoAbajo{
+    position:absolute;
+    top: 690px;
+    left: 1032px;
+    width:336px;
+    height:122px;
+    border:none;
+    resize: none;
+    font-size:20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+footer{
+    background-image:url(imagenes/fondo-flor.jpg);
+    padding:40px;
+    position:absolute;
+    top:1000px;
+    width:100%
+}
+
+.nombre{
+    text-align: center; 
+    font-size: 35px; 
+    color:purple;
+    font-weight: bold;
+}
+
+
+
