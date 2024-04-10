@@ -1,4 +1,4 @@
-body, textarea, .encriptar, .desencriptar, .copiar{
+body, textarea, .btnEncriptar, .btnDesencriptar{
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
@@ -12,16 +12,20 @@ height: 48px;
 padding: 40px;
 }
 
-#textoIzquierda{
+.textoOriginal{
     font-size: 32px;
-    position: absolute;
-    top: 168px;
-    left: 240px; 
-    border: none;
     resize: none;
+    border:none;
+    text-transform: lowercase;
+    margin-left:227px;
+}
+::placeholder{
+    .textoOriginal:focus{
+        outline:none;
+    }
 }
 
-#flexbox {
+.botones{
     display: flex;
     width: Fixed (680px)px;
     height: Hug (67px)px;
@@ -31,18 +35,16 @@ padding: 40px;
     gap: 24px;
 }
   
-.encriptar{
+.btnEncriptar{
     border: 1px solid #0A3871;
     border-radius: 20px;
     background-color:#0A3871;
     width: 328px;
     height: 67px;
     font-size: 20px; color:#E9ECF8
-    
-
 }
 
-.desencriptar{
+.btnDesencriptar{
     border: 1px solid #0A3871;
     border-radius: 20px;
     background-color:lightblue;
@@ -51,59 +53,38 @@ padding: 40px;
     font-size: 20px;
 }
 
-.copiar{
-    position:absolute;
-    top: 870px;
-    left: 1080px;
-    border: 1px solid #0A3871;
-    border-radius: 20px;
-    background-color:lightblue;
-    width: 250px;
-    height: 50px; 
-    font-size: 20px;
-}
-
-.rectangulo{
-    position:absolute;
-    top: 40px;
-    left: 1000px;
-    width:400px;
-    height:944px;
-    }
-
-.muñeco{
+.informacion{
+    width: 265px;
+    height: 18px;
     position: absolute;
-    width: 336px;
-    height: 304px;
-    top: 283px;
-    left: 1032px;
+    top: 840px;
+    left: 240px;
 }
 
-#textoArriba{
+.mensaje{
+    background-color: #FFFFFF;
+    background-image: url(imagenes/Muñeco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border:none;
+    border-radius: 24px;
     position:absolute;
-    top: 610px;
+    top: 89px;
     left: 1032px;
     width:336px;
-    height:122px;
-    border:none;
+    height:850px;
     resize: none;
-    font-size:28px; font-weight:bold;
-    text-align: center;
-    background-color: #FFFFFF;
 
+.mensaje:focus {
+    outline:none;}
 }
 
-#textoAbajo{
+.mensaje::placeholder{
+    font-size: 23px;
+    font-weight: bold;
     position:absolute;
-    top: 690px;
-    left: 1032px;
-    width:336px;
-    height:122px;
-    border:none;
-    resize: none;
-    font-size:20px;
+    top:600px;
     text-align: center;
-    background-color: #FFFFFF;
 }
 
 footer{

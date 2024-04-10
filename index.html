@@ -20,32 +20,26 @@
 
         <main>
 
-            <form>
-                <textarea id="textoIzquierda" name="textarea" rows="10" cols="50">Ingrese el texto aquí</textarea>
-            </form>
+            <section>
+                <textarea class="textoOriginal" name="textarea" rows="10" cols="50" placeholder= "Ingrese el texto aquí"></textarea>        
+            
+                <div>
+                    <h2 class="informacion">⚠ Solo letras minúsculas y sin acentos</h2>
+                </div>
 
-            <img class="rectangulo" src="imagenes/Rectangle 1.png">
-            <img class="muñeco" src="imagenes/Muñeco.png">
-
-            <div id="flexbox">
-                <div><button class="encriptar" onclick= "encriptarTexto();">Encriptar</button></div>
-                <div><button class="desencriptar" onclick="desencriptarTexto();">Desencriptar</button></div>
-            </div>
-
-            <div>
-                <div><textarea id="textoArriba">Ningún mensaje fue encontrado</textarea></div>
-                <div> <textarea id="textoAbajo">Ingresa el texto que desees encriptar o desencriptar</textarea></div>
-            </div>
-
-            <div>
-                <button onclick="copiarTexto();" class="copiar">Copiar</button>
-            </div>
+                <div class ="botones">
+                    <button class="btnEncriptar" onclick = "btnEncriptar();">Encriptar</button>
+                    <button class="btnDesencriptar" onclick ="btnDesencriptar();">Desencriptar</button>
+                </div>
+            </section>
+            
+                <textarea class="mensaje" cols="20" rows="10" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar"></textarea>
                 
         </main>
 
         <div>
             <footer>
-                <p class="nombre">Desarrollado por Kata Nicol</p>
+                <p class="nombre">❀ Desarrollado por Kata Nicol / 2024 ❀</p>
             </footer>
         </div>
 
